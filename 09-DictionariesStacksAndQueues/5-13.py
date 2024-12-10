@@ -1,11 +1,8 @@
 # A program that calculates RPN expressions
 while True:
         expression_input = input("Enter an RPN expression: ")
-        if expression_input == 'exit':
-            break
         stack = []
-        expression = expression_input
-        expression_char = expression.split()
+        expression_char = expression_input
         for i in expression_char:
             if i.isdigit():
                 stack.append(i)
@@ -13,11 +10,14 @@ while True:
                 number2 = stack.pop()
                 number1 = stack.pop()
                 if i == '+':
-                    stack.append(number1 + number2)
+                    stack.append(int(number1) + int(number2))
                 elif i == '-':
-                    stack.append(number1 - number2)
+                    stack.append(int(number1) - int(number2))
                 elif i == '*':
-                    stack.append(number1 * number2)
+                    stack.append(int(number1) * int(number2))
                 elif i == '=':
                     stack.pop()
-        
+        print(stack.pop())
+        if expression_input == 'exit':
+            print('exiting...')
+            break

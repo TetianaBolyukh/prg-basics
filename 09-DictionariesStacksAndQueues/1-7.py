@@ -13,5 +13,7 @@ products = {
 for key,value in products.items():
     print(f'{key}: {value}')
 
-for value in products.items():
-    print()
+sum = 0
+for value in products.values():
+    sum += int(value)
+print('Sum is',sum)
