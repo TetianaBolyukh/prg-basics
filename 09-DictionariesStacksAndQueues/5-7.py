@@ -25,7 +25,7 @@ avg_price_Sopot = avg_price(hotels_in_Sopot)
 cheaper = []
 if avg_price_Krakow<avg_price_Sopot:
     cheaper.append("Krakow")
-if avg_price_Sopot<avg_price_Krakow:
+elif avg_price_Sopot<avg_price_Krakow:
     cheaper.append("Sopot")
 
 print(f'''

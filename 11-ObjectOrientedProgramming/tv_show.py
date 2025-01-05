@@ -4,12 +4,12 @@ from tv import TV
 
 def main():
    # object creation
-    myTV = TV()
+   myTV = TV()
 
    # object usage
-    myTV.turn_on()
-    myTV.show_status()
-    myTV.turn_off()
+   myTV.turn_on()
+   myTV.show_status()
+   myTV.turn_off()
 
 if __name__ == "__main__":
    main() 

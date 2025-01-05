@@ -7,11 +7,12 @@ class TV:
       self.is_on = False
    def turn_on(self):
       self.is_on = True
+      
    def show_status(self):
-       if self.is_on == False:
-            status = "TV is off"
-       elif self.is_on == False:
-            status = "TV is on"
-       return status
+      if self.is_on == False:
+         status = "TV is off"
+      elif self.is_on == True:
+         status = "TV is on"
+      return status
 
         
